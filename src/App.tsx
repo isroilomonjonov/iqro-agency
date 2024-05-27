@@ -2,17 +2,21 @@ import './App.css'
 import PerfomanceChart from './components/charts/perfomance'
 import SessionChart from './components/charts/sessions'
 import Layout from './components/layout/layout'
+import DailyOverview from './components/statistics/daily-overview'
+import PerfomanceStatistics from './components/statistics/perfomance-statistics'
 function App() {
 
   return (
     <Layout>
-      <div className='flex items-center gap-7 w-full pr-8 flex-wrap xl:flex-nowrap'>
+      <div className='flex gap-7 w-full pr-8 flex-wrap xl:flex-nowrap'>
         <div className='perfomance w-full xl:w-[60%]'>
           <div className='flex items-center justify-between mb-4'>
             <h2 className='text-[#5A5881] font-bold text-xl'>Performance</h2>
             <p className='text-[#5A5881] font-bold'>Year</p>
           </div>
           <PerfomanceChart />
+          <PerfomanceStatistics />
+          <DailyOverview />
         </div>
         <div className='sessions w-full xl:w-[40%]'>
           <div className='flex items-center justify-between mb-4'>
@@ -38,6 +42,7 @@ function App() {
           </div>
         </div>
       </div>
+
     </Layout>
   )
 }
