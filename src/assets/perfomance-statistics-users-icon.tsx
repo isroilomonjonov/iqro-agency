@@ -9,5 +9,4 @@ const PerfomanceStatisticsUsersIcon = () => {
 
     )
 }
-
 export default PerfomanceStatisticsUsersIcon

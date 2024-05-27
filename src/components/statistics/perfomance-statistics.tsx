@@ -2,8 +2,6 @@ import PerfomanceStatisticsDurationIcon from '@/assets/perfomance-statistics-dur
 import PerfomanceStatisticsRateIcon from '@/assets/perfomance-statistics-rate-icon'
 import PerfomanceStatisticsSessionsIcon from '@/assets/perfomance-statistics-sessions-icon'
 import PerfomanceStatisticsUsersIcon from '@/assets/perfomance-statistics-users-icon'
-import React from 'react'
-
 const PerfomanceStatistics = () => {
     return (
         <div className='mt-[30px] flex flex-wrap sm:flex-nowrap w-full gap-[30px] justify-between'>

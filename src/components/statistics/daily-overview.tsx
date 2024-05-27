@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button } from '../ui/button'
 import { PieChart, Pie, Cell, Tooltip } from 'recharts';
 const DailyOverview = () => {
@@ -31,7 +30,7 @@ const DailyOverview = () => {
                                 dataKey="value"
                             >
                                 {data1.map((entry, index) => (
-                                    <Cell key={`cell-${index}`} fill={COLORS1[index % COLORS1.length]} />
+                                    <Cell key={`cell-${index}`} fill={COLORS1[index % COLORS1.length]} name={entry.name} />
                                 ))}
                             </Pie>
                         </PieChart>
