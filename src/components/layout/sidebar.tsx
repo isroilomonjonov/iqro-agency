@@ -15,9 +15,9 @@ import Sidebar10Icon from "@/assets/sidebar-10-icon"
 import Sidebar11Icon from "@/assets/sidebar-11-icon"
 
 const Sidebar = () => {
-    const [open, setOpen] = React.useState(true)
+    const [open, setOpen] = React.useState(false)
     return (
-        <div className={`relative flex flex-col gap-10 p-10 py-11 items-start justify-center rounded-s-xl bg-white transition-all duration-300 ${open ? "w-56" : "w-[130px]"}`}>
+        <div className={`relative flex flex-col gap-4 p-4 py-6 sm:gap-10 sm:p-10 sm:py-11 items-start rounded-s-xl bg-white transition-all duration-300 ${open ? "!absolute z-10 w-[60%] sm:w-[20%]" : "w-[95px] sm:w-[130px]"}`}>
             <div className="flex items-center mb-5">
                 <Button variant={"link"} onClick={() => setOpen(!open)}>{open ? <XIcon className="text-[#5A5881] w-6 h-6" /> :
                     <BurgerSidebar />}</Button>
@@ -32,7 +32,7 @@ const Sidebar = () => {
                 <p className={`text-[#5A5881] text-xl opacity-0 ${open ? "transition-all duration-500 delay-100 opacity-100" : ""}`}>Home</p>
                 <p className="absolute h-9 w-1 bg-[#3734A9] left-0 rounded-e-xl "></p>
             </div>
-            <div className="flex gap-2 items-center active:border-[#3734A9]">
+            <div className="flex gap-2 items-center active:border-[#3734A9] cursor-pointer">
                 <div className=" py-4 px-6 rounded-2xl sidebarLogo hover:bg-[#563BFF] hover:text-white">
                     <SidebarSecondIcon className="" />
                 </div>
