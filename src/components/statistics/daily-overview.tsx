@@ -59,7 +59,7 @@ const DailyOverview = () => {
                                 dataKey="value"
                             >
                                 {data2.map((entry, index) => (
-                                    <Cell key={`cell-${index}`} fill={COLORS2[index % COLORS2.length]} />
+                                    <Cell key={`cell-${index}`} fill={COLORS2[index % COLORS2.length]} name={entry.name} />
                                 ))}
                             </Pie>
                         </PieChart>
