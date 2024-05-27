@@ -43,7 +43,7 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({ active, payload }) => {
 
 const PerfomanceChart: React.FC = () => {
     return (
-        <div className={'bg-white p-7 rounded-[10px]'}>
+        <div className={'bg-white p-7 rounded-[10px]  shadow-lg'}>
             <p className='text-[#5A5881] font-bold flex items-center justify-end'><span className='inline-block w-2 h-2 bg-[#563BFF] rounded-full mr-2'></span> Current Period</p>
             <ResponsiveContainer width="100%" height={400}>
                 <LineChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>

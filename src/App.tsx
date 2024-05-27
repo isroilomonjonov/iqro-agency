@@ -4,6 +4,8 @@ import SessionChart from './components/charts/sessions'
 import Layout from './components/layout/layout'
 import DailyOverview from './components/statistics/daily-overview'
 import PerfomanceStatistics from './components/statistics/perfomance-statistics'
+import SessionByDevice from './components/statistics/session-by-device'
+import SessionLastSection from './components/statistics/session-last-section'
 function App() {
 
   return (
@@ -23,7 +25,7 @@ function App() {
             <h2 className='text-[#5A5881] font-bold text-xl'>Sessions By Device</h2>
             <p className='text-[#5A5881] font-bold'>Year</p>
           </div>
-          <div className='p-10 bg-white flex items-center gap-20 w-full rounded-[10px]'>
+          <div className='p-10 bg-white flex items-center gap-20 w-full rounded-[10px] mb-[30px]  shadow-lg'>
             <SessionChart />
             <div className='flex flex-col gap-5'>
               <div>
@@ -40,6 +42,8 @@ function App() {
               </div>
             </div>
           </div>
+          <SessionByDevice />
+          <SessionLastSection />
         </div>
       </div>
 

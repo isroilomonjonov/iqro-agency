@@ -1,0 +1,45 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s;
+  display: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s;
+  display: none;
+}
+
+input[type="range"].range-blue {
+  background: linear-gradient(to right, blue var(--value), #fff var(--value));
+}
+
+input[type="range"].range-orange {
+  background: linear-gradient(to right, orange var(--value), #fff var(--value));
+}
+
+input[type="range"].range-green {
+  background: linear-gradient(to right, green var(--value), #fff var(--value));
+}
