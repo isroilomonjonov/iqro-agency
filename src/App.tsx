@@ -25,7 +25,7 @@ function App() {
             <h2 className='text-[#5A5881] font-bold text-xl'>Sessions By Device</h2>
             <p className='text-[#5A5881] font-bold'>Year</p>
           </div>
-          <div className='p-10 bg-white flex items-center gap-20 w-full rounded-[10px] mb-[30px]  shadow-lg'>
+          <div className='p-10 bg-white flex items-center gap-8 w-full rounded-[10px] mb-[30px] shadow-lg flex-wrap sm:gap-20'>
             <SessionChart />
             <div className='flex flex-col gap-5'>
               <div>

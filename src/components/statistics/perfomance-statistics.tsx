@@ -4,7 +4,7 @@ import PerfomanceStatisticsSessionsIcon from '@/assets/perfomance-statistics-ses
 import PerfomanceStatisticsUsersIcon from '@/assets/perfomance-statistics-users-icon'
 const PerfomanceStatistics = () => {
     return (
-        <div className='mt-[30px] flex flex-wrap sm:flex-nowrap w-full gap-[30px] justify-between'>
+        <div className='mt-[30px] flex flex-wrap lg:flex-nowrap w-full gap-[30px] justify-between'>
             <div style={{ boxShadow: "0px 20px 45px 0px rgba(240, 237, 246, 1)" }} className='w-1/4 min-w-[130px] bg-white shadow-md p-5 rounded-[10px] flex flex-col items-start'>
                 <div className='bg-[rgba(53,117,255,.10)] rounded-[10px] p-5 mb-7'>
                     <PerfomanceStatisticsUsersIcon />

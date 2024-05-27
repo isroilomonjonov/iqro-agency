@@ -23,7 +23,7 @@ const data3: DataPoint[] = [
 ];
 const SessionChart: React.FC = () => {
     return (
-        <div style={{ width: '60%', height: '400px' }}>
+        <div className='w-full sm:w-[60%] h-[400px]'>
             <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                     <Tooltip />

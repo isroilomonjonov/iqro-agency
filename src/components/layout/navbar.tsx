@@ -16,7 +16,7 @@ import MessageIcon from '@/assets/message'
 import { Button } from '../ui/button'
 const Navbar = () => {
     return (
-        <div className='flex justify-between items-center p-4 pt-7 flex-wrap-reverse gap-2 sm:flex-nowrap mb-8'>
+        <div className='flex justify-between items-center p-4 pt-7 flex-wrap-reverse gap-2 lg:flex-nowrap mb-8'>
             <div className='relative sm:min-w-[350px]'>
                 <SearchIcon className="absolute top-1/2 left-4 -translate-y-1/2" />
                 <Input className=' text-[#5A5881] text-[14px] leading-4  px-[15px] py-[17px] rounded-[10px] pl-11' placeholder="Search Anything" />
